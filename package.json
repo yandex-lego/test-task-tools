@@ -1,0 +1,26 @@
+{
+  "name": "pr-updater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "bin": {
+    "pr-updater": "./bin/pr-updater"
+  },
+  "scripts": {
+    "jshint": "./node_modules/.bin/jshint -c .jshintrc --reporter node_modules/jshint-stylish/stylish.js bin/pr-updater index.js",
+    "jscs": "./node_modules/.bin/jscs -c .jscsrc bin/pr-updater index.js",
+    "test": "./node_modules/.bin/mocha test"
+  },
+  "dependencies": {
+    "github": "^0.2.3"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "jscs": "^1.8.1",
+    "jscs-jsdoc": "^0.3.2",
+    "jshint": "^2.5.10",
+    "jshint-stylish": "^1.0.0",
+    "mocha": "^2.0.1"
+  }
+}
